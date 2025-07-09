@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Extractor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    #links {
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-top: 10px;
+    }
+    #links div {
+      margin-bottom: 5px;
+    }
+    button {
+      margin-top: 10px;
+      display: block;
+    }
+    label {
+      margin-left: 5px;
+    }
+    .section {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Link Extractor</h1>
+  <label for="extractionPattern">Extraction Pattern:</label>
+  <input type="text" id="extractionPattern" placeholder="e.g., /doi/..." />
+  <div id="crawlOptions" class="section">
+    <label for="crawlPattern">Crawl Pattern:</label>
+    <input type="text" id="crawlPattern" placeholder="e.g., /toc/...">
+    <label for="volumePattern">Volume Pattern:</label>
+    <input type="text" id="volumePattern" placeholder="e.g. /vol[0-9]+/">
+    <label for="maxLinksInput">Max Crawl Depth:</label>
+    <input type="number" id="maxLinksInput" placeholder="Max links (leave blank for unlimited)" />
+  </div>
+  <div class="section">
+    <input type="checkbox" id="crawl">
+    <label for="crawl">Enable Crawling</label>
+  </div>
+  <div class="section">
+    <button id="start">Start</button>
+  </div>
+  <div class="section" id="serverSettings" hidden>
+    <div>
+      <label for="serverUrl">Server URL:</label><br>
+      <input type="text" id="serverUrl" placeholder="e.g., http://localhost">
+    </div>
+    <div>
+      <label for="port">Port:</label><br>
+      <input type="text" id="port" placeholder="e.g., 8080">
+    </div>
+  </div>
+  <div id="links"></div>
+  <div class="section">
+    <button id="send" hidden>Send Articles to Webserver</button>
+    <button id="download" hidden>Download Links</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

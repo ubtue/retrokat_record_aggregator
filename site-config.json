@@ -1,0 +1,28 @@
+{
+    "default": {
+      "extraction_pattern": ".*",
+      "crawl_pattern": ".*",
+      "crawl": false,
+      "site": "default",
+      "selectors": {
+        "article": "a.issue-item__title",
+        "title": "h2",
+        "linkAttr": "href"
+      },
+      "max_links": 5
+    },
+    "onlinelibrary.wiley.com": {
+      "pattern": "onlinelibrary\\.wiley\\.com/loi/14781913(/year/\\d{4})?",
+      "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14781913/year/\\d{4}$",
+      "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14781913/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+      "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1478-1913\\.\\d+(?:\\.\\w+)?|muwo\\.\\d+)",
+      "crawl": true,
+      "site": "The Muslim World",
+      "selectors": {
+        "article": "a.issue-item__title",
+        "title": "h2",
+        "linkAttr": "href"
+      },
+      "max_links": 5
+    }
+  }

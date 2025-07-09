@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Link Extractor",
+  "version": "1.0",
+  "description": "Extracts all anchors from pages and follows links matching a pattern.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+    "web_accessible_resources": [
+    {
+      "resources": ["site-config.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_area": "navbar",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.svg"
+    }
+  }
+}
