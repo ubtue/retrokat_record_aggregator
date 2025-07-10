@@ -112,7 +112,7 @@ sendButton.addEventListener('click', async () => {
   }
 
   const serverUrl = serverUrlInput.value || 'http://localhost';
-  const port = portInput.value || '8080';
+  const port = portInput.value || '9500';
   const url = `${serverUrl}:${port}/submit_feed`;
 
   let lines = [];
