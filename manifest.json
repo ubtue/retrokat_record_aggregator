@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Link Extractor",
+  "name": "Record Aggregator",
   "version": "1.0",
   "description": "Extracts all anchors from pages and follows links matching a pattern.",
   "permissions": [
