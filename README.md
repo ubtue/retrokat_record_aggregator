@@ -112,7 +112,7 @@ pattern=...
 
 >Default endpoint: 'http://localhost:9500/submit_feed'
 
-Update the server URL and port in the [popup.js](./popup.js) as needed.
+Update the server URL and port in the popup and the default value in [popup.js](./popup.js) as needed.
 
 ---
 
