@@ -1,42 +1,56 @@
 {
-    "default": {
-      "extraction_pattern": ".*",
-      "crawl_pattern": ".*",
-      "crawl": false,
-      "site": "default",
-      "selectors": {
-        "linkSelector": "a.issue-item__title",
-        "titleSelector": "h2",
-        "linkAttr": "href"
-      },
-      "max_links": 5
+  "default": {
+    "extraction_pattern": ".*",
+    "crawl_pattern": ".*",
+    "crawl": false,
+    "site": "default",
+    "selectors": {
+      "linkSelector": "a.issue-item__title",
+      "titleSelector": "h2",
+      "linkAttr": "href"
     },
-    "onlinelibrary.wiley.com": {
-      "pattern": "onlinelibrary\\.wiley\\.com/loi/14781913(/year/\\d{4})?",
-      "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14781913/year/\\d{4}$",
-      "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14781913/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
-      "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1478-1913\\.\\d+(?:\\.\\w+)?|muwo\\.\\d+)",
-      "crawl": true,
-      "site": "The Muslim World",
-      "selectors": {
-        "linkSelector": "a.issue-item__title",
-        "titleSelector": "h2",
-        "linkAttr": "href"
-      },
-      "max_links": 5
+    "max_links": 5
+  },
+  "onlinelibrary.wiley.com": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/14781913(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14781913/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14781913/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1478-1913\\.\\d+(?:\\.\\w+)?|muwo\\.\\d+)",
+    "crawl": true,
+    "site": "The Muslim World",
+    "selectors": {
+      "linkSelector": "a.issue-item__title",
+      "titleSelector": "h2",
+      "linkAttr": "href"
     },
-      "riviste.upra.org": {
-      "pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive?",
-      "volume_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive/\\d+$",
-      "crawl_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/view/\\d+$",
-      "extraction_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/article/view/\\d+$",
-      "crawl": true,
-      "site": "Alpha omega : rivista di filosofia e teologia dellʾAteneo Pontificio Regina Apostolorum",
-      "selectors": {
-        "linkSelector": "div.article-summary-title a",
-        "titleSelector": null,
-        "linkAttr": "href"
-      },
-      "max_links": 5
-    }
+    "max_links": 5
+  },
+  "riviste.upra.org": {
+    "pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive?",
+    "volume_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive/\\d+$",
+    "crawl_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/view/\\d+$",
+    "extraction_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/article/view/\\d+$",
+    "crawl": true,
+    "site": "Alpha omega : rivista di filosofia e teologia dellʾAteneo Pontificio Regina Apostolorum",
+    "selectors": {
+      "linkSelector": "div.article-summary-title a",
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "ejournals.bc.edu": {
+    "pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/issue/archive?",
+    "volume_pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/issue/archive/\\d+$",
+    "crawl_pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/issue/view/(\\d+|ctsavol\\d+)$",
+    "extraction_pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/article/view/\\d+$",
+    "crawl": true,
+    "site": "Catholic Theological Society of America proceedings",
+    "selectors": {
+      "linkSelector": "h3.title a",
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
   }
+}
