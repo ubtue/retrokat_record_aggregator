@@ -6,7 +6,6 @@ const maxLinksInput = document.getElementById('maxLinksInput');
 const startButton = document.getElementById('start');
 const crawlCheckbox = document.getElementById('crawl');
 const serverUrlInput = document.getElementById('serverUrl');
-const portInput = document.getElementById('port');
 const linksContainer = document.getElementById('links');
 const sendButton = document.getElementById('send');
 const downloadButton = document.getElementById('download');
@@ -104,39 +103,41 @@ chrome.runtime.onMessage.addListener((message) => {
   }
 });
 
-// Send selected links to webserver
+// Send selected links to server/cgi
 sendButton.addEventListener('click', async () => {
   if (extractedLinks.length === 0) {
     alert('No links to send.');
     return;
   }
 
-  const serverUrl = serverUrlInput.value || 'http://localhost';
-  const port = portInput.value || '9500';
-  const url = `${serverUrl}:${port}/submit_feed`;
+  const url = (serverUrlInput.value || 'http://localhost/cgi-bin/record_aggregator/submit_feed').trim();
 
-  let lines = [];
+  const payload = {
+    journal: currentJournalName,
+    pattern: currentJournalPattern,
+    volume_pattern: volumePatternInput.value,
+    crawl_pattern: crawlPatternInput.value,
+    extraction_pattern: patternInput.value,
+    articles: extractedLinks.map(entry => ({
+      title: entry.title,
+      link: entry.link
+    }))
+  };
 
-  for (const entry of extractedLinks) {
-    lines.push(
-      `journal=${encodeURIComponent(currentJournalName)}`,
-      `main_title=${encodeURIComponent(entry.title)}`,
-      `article_link=${encodeURIComponent(entry.link)}`,
-      `volume_pattern=${encodeURIComponent(volumePatternInput.value)}`,
-      `crawl_pattern=${encodeURIComponent(crawlPatternInput.value)}`,
-      `extraction_pattern=${encodeURIComponent(patternInput.value)}`,
-      `pattern=${encodeURIComponent(currentJournalPattern)}`,
-      ''
-    );
+  try {
+    new URL(url);
+  } catch (e) {
+    alert('Invalid URL. Please check the Server/CGI URL field.');
+    return;
   }
 
-  const body = lines.join('\n');
+  const bodyData = "payload=" + encodeURIComponent(JSON.stringify(payload));
 
   try {
     const response = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'text/plain' },
-      body: body
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: bodyData
     });
 
     const result = await response.text();

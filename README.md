@@ -2,7 +2,7 @@
 
 A flexible browser extension for extracting article links (and their titles) from academic websites or archives. You define patterns for crawling and extraction, and the extension can either:
 
-- Send the data to a custom server (e.g., for MySQL storage)
+- Send the data to a custom server/cgi (e.g., for MySQL storage)
 - Or download the results as a plain `.txt` file
 
 It supports **deep crawling**, starting from volumes → issues → articles, based on pattern-matching rules defined per site.
@@ -48,7 +48,7 @@ Click **Start** to begin extracting links:
 
 Once extraction is complete:
 
-- Click **Send Articles to Webserver** to POST the results to a custom server
+- Click **Send Articles to Server/CGI** to POST the results to a custom server
 - Or click **Download Links** to save a text file
 
 ---
@@ -92,27 +92,40 @@ Example entry:
 
 * **Enable Crawling** – Enables deep crawl
 
-* **Server URL & Port** – If sending to a server
+* **Server or CGI URL** – If sending to a server/cgi
 
 ---
 
 ## Server Endpoint
 
-Your server should accept 'POST' requests with a body of type 'text/plain'. Each article is submitted with the following fields:
+Your server should accept `POST` requests with `Content-Type: application/x-www-form-urlencoded`.  
+The request body contains a single `payload` parameter with a JSON-encoded object.
 
-```plaintext
-journal=...
-main_title=...
-article_link=...
-volume_pattern=...
-crawl_pattern=...
-extraction_pattern=...
-pattern=...
+Each `payload` represents a batch of articles and contains the following fields:
+
+```json
+{
+  "journal": "Alpha omega : rivista di filosofia e teologia dellʾAteneo Pontificio Regina Apostolorum",
+  "pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive?",
+  "volume_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive/\\d+$",
+  "crawl_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/view/\\d+$",
+  "extraction_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/article/view/\\d+$",
+  "articles": [
+    {
+      "title": "Atoned by faith? A new variation on an old question",
+      "link": "https://riviste.upra.org/index.php/ao/article/view/336"
+    },
+    {
+      "title": "Essere, persona, agire etico. La difficilis quaestio de natura humanae naturae",
+      "link": "https://riviste.upra.org/index.php/ao/article/view/340"
+    }
+  ]
+}
 ```
 
->Default endpoint: 'http://localhost:9500/submit_feed'
+>Default endpoint: 'http://localhost/cgi-bin/record_aggregator/submit_feed'
 
-Update the server URL and port in the popup and the default value in [popup.js](./popup.js) as needed.
+Update the server/cgi URL in the popup and the default value in [popup.js](./popup.js) as needed.
 
 ---
 

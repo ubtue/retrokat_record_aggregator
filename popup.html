@@ -50,17 +50,13 @@
   </div>
   <div class="section" id="serverSettings" hidden>
     <div>
-      <label for="serverUrl">Server URL:</label><br>
-      <input type="text" id="serverUrl" placeholder="e.g., http://localhost">
-    </div>
-    <div>
-      <label for="port">Port:</label><br>
-      <input type="text" id="port" placeholder="e.g., 8080">
+      <label for="serverUrl">Server or CGI URL:</label><br>
+      <input type="text" id="serverUrl" placeholder="e.g., http://localhost/cgi-bin/record_aggregator/submit_feed">
     </div>
   </div>
   <div id="links"></div>
   <div class="section">
-    <button id="send" hidden>Send Articles to Webserver</button>
+    <button id="send" hidden>Send Articles to Server/CGI</button>
     <button id="download" hidden>Download Links</button>
   </div>
 

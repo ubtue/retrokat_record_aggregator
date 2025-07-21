@@ -2,7 +2,7 @@
   let config = {};
 
   // Listen for messages from the background script
-  chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  chrome.runtime.onMessage.addListener((message) => {
     if (message.type === 'SET_CONFIG') {
       config = message.config;
       console.log('[Content Script] Configuration received:', config);
@@ -15,16 +15,30 @@
         return;
       }
 
-      const { linkSelector = 'a', titleSelector } = config.selectors || {};
+      const { linkSelector, titleSelector } = config.selectors || {};
 
-      const links = Array.from(document.querySelectorAll(linkSelector)).map(a => ({
-        link: a.href,
-        title: titleSelector ? a.closest(titleSelector)?.textContent.trim() || a.textContent.trim() : a.textContent.trim()
-      }));
+      const allAnchors = Array.from(document.querySelectorAll('a')).filter(a => a.href);
 
-      console.log('[Content Script] Extracted links and titles:', links);
+      const extractedLinks = allAnchors.map(a => {
+        let isArticle = a.matches(linkSelector);
+        let title;
+        if (isArticle) {
+          const titleEl = titleSelector ? a.closest(titleSelector) : null;
+          title = titleEl?.textContent.trim() || a.textContent.trim();
+        } else {
+          title = a.textContent.trim();
+        }
+        return {
+          link: a.href,
+          title
+        };
+      });
+      console.log('[Content Script] Extracted links:', extractedLinks);
 
-      chrome.runtime.sendMessage({ type: 'EXTRACTED_LINKS', links });
+      chrome.runtime.sendMessage({
+        type: 'EXTRACTED_LINKS',
+        links: extractedLinks
+      });
     }
   });
 })();

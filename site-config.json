@@ -5,8 +5,8 @@
       "crawl": false,
       "site": "default",
       "selectors": {
-        "article": "a.issue-item__title",
-        "title": "h2",
+        "linkSelector": "a.issue-item__title",
+        "titleSelector": "h2",
         "linkAttr": "href"
       },
       "max_links": 5
@@ -19,8 +19,22 @@
       "crawl": true,
       "site": "The Muslim World",
       "selectors": {
-        "article": "a.issue-item__title",
-        "title": "h2",
+        "linkSelector": "a.issue-item__title",
+        "titleSelector": "h2",
+        "linkAttr": "href"
+      },
+      "max_links": 5
+    },
+      "riviste.upra.org": {
+      "pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive?",
+      "volume_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive/\\d+$",
+      "crawl_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/view/\\d+$",
+      "extraction_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/article/view/\\d+$",
+      "crawl": true,
+      "site": "Alpha omega : rivista di filosofia e teologia dellʾAteneo Pontificio Regina Apostolorum",
+      "selectors": {
+        "linkSelector": "div.article-summary-title a",
+        "titleSelector": null,
         "linkAttr": "href"
       },
       "max_links": 5
