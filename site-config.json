@@ -5,8 +5,8 @@
     "crawl": false,
     "site": "default",
     "selectors": {
-      "linkSelector": "a.issue-item__title",
-      "titleSelector": "h2",
+      "linkSelector": "a",
+      "titleSelector": null,
       "linkAttr": "href"
     },
     "max_links": 5
@@ -48,6 +48,20 @@
     "site": "Catholic Theological Society of America proceedings",
     "selectors": {
       "linkSelector": "h3.title a",
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "brepolsonline.net": {
+    "pattern": "https://www\\.brepolsonline\\.net/loi/aboll",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.brepolsonline\\.net/toc/aboll/\\d{4}(?:/(?:Indices|\\d+|\\d+-\\d+))*/?$",
+    "extraction_pattern": "https://www\\.brepolsonline\\.net/doi/abs/10\\.1484/J\\.ABOL\\.\\d\\.\\d+$",
+    "crawl": true,
+    "site": "Analecta Bollandiana : revue critique d'hagiographie _ a journal of critical hagiography",
+    "selectors": {
+      "linkSelector": null,
       "titleSelector": null,
       "linkAttr": "href"
     },

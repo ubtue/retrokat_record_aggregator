@@ -3,7 +3,7 @@ let matchedLinks = new Map();
 let followedLinksCount = 0;
 let maxLinks = 5;
 let config = {};
-let stage = 'volume';
+stage = config.volume_pattern ? 'volume' : 'issue';
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -68,7 +68,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     visitedUrls.clear();
     matchedLinks.clear();
     followedLinksCount = 0;
-    stage = 'volume';
+    stage = config.volume_pattern ? 'volume' : 'issue';
   }
 
   if (message.type === 'REQUEST_LINKS') {
@@ -94,7 +94,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const toFollow = [];
 
     crawlCandidates.forEach(item => {
-      // if (!visitedUrls.has(item.link)) {
       if (!visitedUrls.has(item.link) && (maxLinks === null || followedLinksCount < maxLinks)) {
         visitedUrls.add(item.link);
         followedLinksCount++;
