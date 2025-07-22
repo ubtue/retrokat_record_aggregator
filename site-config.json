@@ -27,7 +27,7 @@
   },
   "riviste.upra.org": {
     "pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive?",
-    "volume_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive/\\d+$",
+    "volume_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/archive(?:/\\d+)?(?!#)",
     "crawl_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/issue/view/\\d+$",
     "extraction_pattern": "https://riviste\\.upra\\.org/index\\.php/ao/article/view/\\d+$",
     "crawl": true,
@@ -41,7 +41,7 @@
   },
   "ejournals.bc.edu": {
     "pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/issue/archive?",
-    "volume_pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/issue/archive/\\d+$",
+    "volume_pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/issue/archive(?:/\\d+)?(?!#)",
     "crawl_pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/issue/view/(\\d+|ctsavol\\d+)$",
     "extraction_pattern": "https://ejournals\\.bc\\.edu/index\\.php/ctsa/article/view/\\d+$",
     "crawl": true,
