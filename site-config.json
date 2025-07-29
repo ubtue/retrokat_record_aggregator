@@ -59,7 +59,7 @@
     "crawl_pattern": "https://www\\.brepolsonline\\.net/toc/aboll/\\d{4}(?:/(?:Indices|\\d+|\\d+-\\d+))*/?$",
     "extraction_pattern": "https://www\\.brepolsonline\\.net/doi/abs/10\\.1484/J\\.ABOL\\.\\d\\.\\d+$",
     "crawl": true,
-    "site": "Analecta Bollandiana : revue critique d'hagiographie _ a journal of critical hagiography",
+    "site": "Analecta Bollandiana : revue critique d_hagiographie _ a journal of critical hagiography",
     "selectors": {
       "linkSelector": null,
       "titleSelector": null,
