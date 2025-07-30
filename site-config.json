@@ -66,5 +66,19 @@
       "linkAttr": "href"
     },
     "max_links": 5
+  },
+  "foi-et-vie.fr": {
+    "pattern": "https://www\\.foi-et-vie\\.fr/archive/?",
+    "volume_pattern": "https://www\\.foi-et-vie\\.fr/archive/byyear\\.php#year=(19\\d{2}|[2-9]\\d{3})",
+    "crawl_pattern": "https://www\\.foi-et-vie\\.fr/archive/review.php\\?code=\\d{4}_\\d+$",
+    "extraction_pattern": "https://www\\.foi-et-vie\\.fr/archive/article.php\\?code=\\d+$",
+    "crawl": true,
+    "site": "Foi & vie : revue de culture protestante",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
   }
 }
