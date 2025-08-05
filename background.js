@@ -104,7 +104,7 @@ async function processIssueLink(link) {
       timeoutId = setTimeout(() => {
         console.warn(`[Background] Timeout on tab ${tabId}`);
         cleanup();
-      }, 7000);
+      }, 10000);
       chrome.runtime.onMessage.addListener(onExtracted);
     });
   });

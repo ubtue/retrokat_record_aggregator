@@ -80,5 +80,33 @@
       "linkAttr": "href"
     },
     "max_links": 5
+  },
+  "zwingliana.ch": {
+    "pattern": "zwingliana\\.ch/issue/archive",
+    "volume_pattern": "",
+    "crawl_pattern": "https://zwingliana\\.ch/issue/view/\\d+$",
+    "extraction_pattern": "https://zwingliana\\.ch/article/view/\\d+$",
+    "crawl": true,
+    "site": "Zwingliana : Beiträge zur Geschichte des Protestantismus in der Schweiz und seiner Ausstrahlung",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "koersjournal.org.za": {
+    "pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/archive/?",
+    "volume_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/archive/\\d+$",
+    "crawl_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/view/\\d+$",
+    "extraction_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/article/view/\\d+$",
+    "crawl": true,
+    "site": "Koers : Bulletin for Christian Scholarship = Koers : Bulletin vir Christelike Wetenskap",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
   }
 }
