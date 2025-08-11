@@ -108,5 +108,145 @@
       "linkAttr": "href"
     },
     "max_links": 5
+  },
+    "https://onlinelibrary.wiley.com/loi/15406385": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/15406385(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15406385/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15406385/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1540-6385\\.\\d+(?:\\.\\w+\\.x)?|dial\\.\\d+)",
+    "crawl": true,
+    "site": "Dialog : a journal of theology",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://onlinelibrary.wiley.com/loi/17586631": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/17586631(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586631/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586631/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1758-6631\\.\\d+(?:\\.\\w+\\.x)?|irom\\.\\d+)",
+    "crawl": true,
+    "site": "International review of mission",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://onlinelibrary.wiley.com/loi/14679647": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/14679647(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679647/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679647/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1467-9647\\.\\d+(?:\\.\\w+\\.x)?|teth\\.\\d+)",
+    "crawl": true,
+    "site": "Teaching theology and religion",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://onlinelibrary.wiley.com/loi/17586623": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/17586623(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586623/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586623/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1758-6623\\.\\d+(?:\\.\\w+\\.x)?|erev\\.\\d+)",
+    "crawl": true,
+    "site": "The ecumenical review",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://onlinelibrary.wiley.com/loi/1552146x": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/1552146x/\\d{4}/\\d+/\\w?(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.(1002|2307|1353)/(\\d+|hast\\.\\d+|\\w+\\.\\d+\\.\\d+)",
+    "crawl": true,
+    "site": "The Hastings Center report",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://onlinelibrary.wiley.com/loi/17576547": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/17576547(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17576547/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/(17576547|18359310)/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|taja\\.\\d+)",
+    "crawl": true,
+    "site": "The Australian journal of anthropology : official journal of the Australian Anthropological Society",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://onlinelibrary.wiley.com/loi/14679205": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/14679205(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679205/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679205/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|phin\\.\\d+)",
+    "crawl": true,
+    "site": "Philosophical investigations",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "anthrosource.onlinelibrary.wiley.com/loi/15481352": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/15481352(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15481352/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15481352/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/(10\\.(1111|1525)/[A-Za-z0-9.\\-]+)",
+    "crawl": true,
+    "site": "Ethos : journal of the Society for Psychological Anthropology",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://hispaniasacra.revistas.csic.es": {
+    "pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/(archive|view/\\d+)$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/view/\\d+$",
+    "extraction_pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/article/view/\\d+$",
+    "crawl": true,
+    "site": "Hispania sacra : revista de historia eclesiástica",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "https://dialnet.unirioja.es/": {
+    "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=649",
+    "volume_pattern": "",
+    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
+    "extraction_pattern": "https://dialnet.unirioja.es/servlet/articulo?codigo=\\d+$",
+    "crawl": true,
+    "site": "Hispania sacra : revista de historia eclesiástica",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
   }
 }
