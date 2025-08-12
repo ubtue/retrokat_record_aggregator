@@ -109,7 +109,7 @@
     },
     "max_links": 5
   },
-    "https://onlinelibrary.wiley.com/loi/15406385": {
+    "onlinelibrary.wiley.com/loi/15406385": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/15406385(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15406385/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15406385/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -123,7 +123,7 @@
     },
     "max_links": 5
   },
-    "https://onlinelibrary.wiley.com/loi/17586631": {
+    "onlinelibrary.wiley.com/loi/17586631": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/17586631(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586631/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586631/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -137,7 +137,7 @@
     },
     "max_links": 5
   },
-    "https://onlinelibrary.wiley.com/loi/14679647": {
+    "onlinelibrary.wiley.com/loi/14679647": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/14679647(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679647/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679647/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -151,7 +151,7 @@
     },
     "max_links": 5
   },
-    "https://onlinelibrary.wiley.com/loi/17586623": {
+    "onlinelibrary.wiley.com/loi/17586623": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/17586623(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586623/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586623/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -165,7 +165,7 @@
     },
     "max_links": 5
   },
-    "https://onlinelibrary.wiley.com/loi/1552146x": {
+    "onlinelibrary.wiley.com/loi/1552146x": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/1552146x/\\d{4}/\\d+/\\w?(\\d+|\\d+-\\d+)$",
@@ -179,7 +179,7 @@
     },
     "max_links": 5
   },
-    "https://onlinelibrary.wiley.com/loi/17576547": {
+    "onlinelibrary.wiley.com/loi/17576547": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/17576547(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17576547/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/(17576547|18359310)/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -193,7 +193,7 @@
     },
     "max_links": 5
   },
-    "https://onlinelibrary.wiley.com/loi/14679205": {
+    "onlinelibrary.wiley.com/loi/14679205": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/14679205(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679205/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679205/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -221,7 +221,7 @@
     },
     "max_links": 5
   },
-    "https://hispaniasacra.revistas.csic.es": {
+    "hispaniasacra.revistas.csic.es": {
     "pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/(archive|view/\\d+)$",
     "volume_pattern": "",
     "crawl_pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/view/\\d+$",
@@ -235,7 +235,7 @@
     },
     "max_links": 5
   },
-    "https://dialnet.unirioja.es/": {
+    "dialnet.unirioja.es": {
     "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=649",
     "volume_pattern": "",
     "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
@@ -245,6 +245,48 @@
     "selectors": {
       "linkSelector": "a",
       "titleSelector": "span.substitulo",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.agustinosvalladolid.es": {
+    "pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/archive/\\d+$",
+    "crawl_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/article/view/\\d+$",
+    "crawl": true,
+    "site": "Estudio agustiniano",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.est.edu.br": {
+    "pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.est\\.edu\\.br/ET/article/view/\\d+$",
+    "crawl": true,
+    "site": "Estudos Teológicos : órgão semestral editado pela Escola Superior de Teologia, Instituto Ecum",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "tyndalebulletin.org": {
+    "pattern": "https://www\\.tyndalebulletin\\.org/issues",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.tyndalebulletin\\.org/issue/\\d+$",
+    "extraction_pattern": "https://www\\.tyndalebulletin\\.org/article/\\d+",
+    "crawl": true,
+    "site": "Tyndale bulletin : organ of the Tyndale Fellowship for Biblical and Theological Research and of Tyndale House",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
       "linkAttr": "href"
     },
     "max_links": 5
