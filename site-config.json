@@ -239,12 +239,12 @@
     "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=649",
     "volume_pattern": "",
     "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
-    "extraction_pattern": "https://dialnet.unirioja.es/servlet/articulo?codigo=\\d+$",
+    "extraction_pattern": "https://dialnet\\.unirioja\\.es/servlet/articulo\\?codigo=\\d+$",
     "crawl": true,
     "site": "Hispania sacra : revista de historia eclesiástica",
     "selectors": {
-      "linkSelector": null,
-      "titleSelector": null,
+      "linkSelector": "a",
+      "titleSelector": "span.substitulo",
       "linkAttr": "href"
     },
     "max_links": 5
