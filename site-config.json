@@ -82,7 +82,7 @@
     "max_links": 5
   },
   "zwingliana.ch": {
-    "pattern": "zwingliana\\.ch/issue/archive",
+    "pattern": "zwingliana\\.ch/issue/(archive|view/\\d+)",
     "volume_pattern": "",
     "crawl_pattern": "https://zwingliana\\.ch/issue/view/\\d+$",
     "extraction_pattern": "https://zwingliana\\.ch/article/view/\\d+$",
@@ -113,7 +113,7 @@
     "pattern": "onlinelibrary\\.wiley\\.com/loi/15406385(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15406385/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15406385/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
-    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1540-6385\\.\\d+(?:\\.\\w+\\.x)?|dial\\.\\d+)",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|dial\\.\\d+|\\d+-\\d+\\.\\d+)",
     "crawl": true,
     "site": "Dialog : a journal of theology",
     "selectors": {
@@ -278,12 +278,124 @@
     "max_links": 5
   },
     "tyndalebulletin.org": {
-    "pattern": "https://www\\.tyndalebulletin\\.org/issues",
+    "pattern": "https://www\\.tyndalebulletin\\.org/issue(s|/\\d+)?",
     "volume_pattern": "",
     "crawl_pattern": "https://www\\.tyndalebulletin\\.org/issue/\\d+$",
     "extraction_pattern": "https://www\\.tyndalebulletin\\.org/article/\\d+",
     "crawl": true,
     "site": "Tyndale bulletin : organ of the Tyndale Fellowship for Biblical and Theological Research and of Tyndale House",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/2161007X": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/2161007X(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/2161007x/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/(2161007x|21645183)/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.\\d{4}/((j\\.)?\\d{4}-\\d+\\w?\\.\\d+(?:\\.\\w+\\.x)?|cvj\\.\\d+)",
+    "crawl": true,
+    "site": "Counseling and values : official journal of the National Catholic Guidance Conference",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.pucsp.br": {
+    "pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/article/view/(rct\\.v\\d+i\\d+\\.\\d+|rct\\.i\\d+\\.\\d+|\\d+)$",
+    "crawl": true,
+    "site": "Revista de cultura teológica",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistaseletronicas.pucrs.br/teo": {
+    "pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/view/\\d+$",
+    "extraction_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/article/view/\\d+$",
+    "crawl": true,
+    "site": "Teocomunicação : revista trimestral de teologia",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "periodicos.pucminas.br/horizonte": {
+    "pattern": "https://periodicos\\.pucminas\\.br/horizonte/issue/archive",
+    "volume_pattern": "",
+    "crawl_pattern": "https://periodicos\\.pucminas\\.br/horizonte/issue/view/\\d+$",
+    "extraction_pattern": "https://periodicos\\.pucminas\\.br/horizonte/article/view/(P\\.\\d{4}-\\d{4}\\.\\d+\\w+)?\\d+(-\\d+)?$",
+    "crawl": true,
+    "site": "Horizonte : Revista de Estudos de Teologia e Ciências da Religião",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "digitalcommons.unomaha.edu/jrf": {
+    "pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/(all_issues\\.html|vol\\d+/)$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/vol\\d+/iss\\d+/$",
+    "extraction_pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/vol\\d+/iss\\d+/\\d+$",
+    "crawl": true,
+    "site": "The Journal of Religion and Film",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "unipub.uni-graz.at/oerf": {
+    "pattern": "https://unipub\\.uni-graz\\.at/oerf\\?offset=\\d+$",
+    "volume_pattern": "https://unipub\\.uni-graz\\.at/oerf\\?offset=\\d+$",
+    "crawl_pattern": "https://unipub\\.uni-graz\\.at/oerf/periodical/titleinfo/\\d+$",
+    "extraction_pattern": "https://unipub\\.uni-graz\\.at/oerf/content/titleinfo/\\d+$",
+    "crawl": true,
+    "site": "Österreichisches Religionspädagogisches Forum",
+    "selectors": {
+      "linkSelector": "a.scap",
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "dialnet.unirioja.es/servlet": {
+    "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=1218$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
+    "extraction_pattern": "https://dialnet\\.unirioja\\.es/servlet/articulo\\?codigo=\\d+$",
+    "crawl": true,
+    "site": "Revista española de derecho canónico",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "brepolsonline.net/loi/rea": {
+    "pattern": "https://www\\.brepolsonline\\.net/loi/rea",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.brepolsonline\\.net/toc/rea/\\d{4}/\\d+/\\d+$",
+    "extraction_pattern": "https://www\\.brepolsonline\\.net/doi/abs/10\\.\\d{4}/J\\.REA\\.\\d\\.\\d+$",
+    "crawl": true,
+    "site": "Revue des études augustiniennes",
     "selectors": {
       "linkSelector": null,
       "titleSelector": null,
