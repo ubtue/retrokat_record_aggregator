@@ -66,5 +66,523 @@
       "linkAttr": "href"
     },
     "max_links": 5
+  },
+  "foi-et-vie.fr": {
+    "pattern": "https://www\\.foi-et-vie\\.fr/archive/?",
+    "volume_pattern": "https://www\\.foi-et-vie\\.fr/archive/byyear\\.php#year=(19\\d{2}|[2-9]\\d{3})",
+    "crawl_pattern": "https://www\\.foi-et-vie\\.fr/archive/review.php\\?code=\\d{4}_\\d+$",
+    "extraction_pattern": "https://www\\.foi-et-vie\\.fr/archive/article.php\\?code=\\d+$",
+    "crawl": true,
+    "site": "Foi & vie : revue de culture protestante",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "zwingliana.ch": {
+    "pattern": "zwingliana\\.ch/issue/(archive|view/\\d+)",
+    "volume_pattern": "",
+    "crawl_pattern": "https://zwingliana\\.ch/issue/view/\\d+$",
+    "extraction_pattern": "https://zwingliana\\.ch/article/view/\\d+$",
+    "crawl": true,
+    "site": "Zwingliana : Beiträge zur Geschichte des Protestantismus in der Schweiz und seiner Ausstrahlung",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "koersjournal.org.za": {
+    "pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/archive/?",
+    "volume_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/archive/\\d+$",
+    "crawl_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/view/\\d+$",
+    "extraction_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/article/view/\\d+$",
+    "crawl": true,
+    "site": "Koers : Bulletin for Christian Scholarship = Koers : Bulletin vir Christelike Wetenskap",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/15406385": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/15406385(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15406385/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15406385/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|dial\\.\\d+|\\d+-\\d+\\.\\d+)",
+    "crawl": true,
+    "site": "Dialog : a journal of theology",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/17586631": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/17586631(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586631/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586631/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1758-6631\\.\\d+(?:\\.\\w+\\.x)?|irom\\.\\d+)",
+    "crawl": true,
+    "site": "International review of mission",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/14679647": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/14679647(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679647/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679647/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1467-9647\\.\\d+(?:\\.\\w+\\.x)?|teth\\.\\d+)",
+    "crawl": true,
+    "site": "Teaching theology and religion",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/17586623": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/17586623(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586623/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586623/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?1758-6623\\.\\d+(?:\\.\\w+\\.x)?|erev\\.\\d+)",
+    "crawl": true,
+    "site": "The ecumenical review",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/1552146x": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/1552146x/\\d{4}/\\d+/\\w?(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.(1002|2307|1353)/(\\d+|hast\\.\\d+|\\w+\\.\\d+\\.\\d+)",
+    "crawl": true,
+    "site": "The Hastings Center report",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/17576547": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/17576547(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17576547/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/(17576547|18359310)/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|taja\\.\\d+)",
+    "crawl": true,
+    "site": "The Australian journal of anthropology : official journal of the Australian Anthropological Society",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/14679205": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/14679205(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679205/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679205/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|phin\\.\\d+)",
+    "crawl": true,
+    "site": "Philosophical investigations",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "anthrosource.onlinelibrary.wiley.com/loi/15481352": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/15481352(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15481352/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15481352/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/(10\\.(1111|1525)/[A-Za-z0-9.\\-]+)",
+    "crawl": true,
+    "site": "Ethos : journal of the Society for Psychological Anthropology",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "hispaniasacra.revistas.csic.es": {
+    "pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/(archive|view/\\d+)$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/view/\\d+$",
+    "extraction_pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/article/view/\\d+$",
+    "crawl": true,
+    "site": "Hispania sacra : revista de historia eclesiástica",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "dialnet.unirioja.es": {
+    "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=649",
+    "volume_pattern": "",
+    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
+    "extraction_pattern": "https://dialnet\\.unirioja\\.es/servlet/articulo\\?codigo=\\d+$",
+    "crawl": true,
+    "site": "Hispania sacra : revista de historia eclesiástica",
+    "selectors": {
+      "linkSelector": "a",
+      "titleSelector": "span.substitulo",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.agustinosvalladolid.es": {
+    "pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/archive/\\d+$",
+    "crawl_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/article/view/\\d+$",
+    "crawl": true,
+    "site": "Estudio agustiniano",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.est.edu.br": {
+    "pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.est\\.edu\\.br/ET/article/view/\\d+$",
+    "crawl": true,
+    "site": "Estudos Teológicos : órgão semestral editado pela Escola Superior de Teologia, Instituto Ecum",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "tyndalebulletin.org": {
+    "pattern": "https://www\\.tyndalebulletin\\.org/issue(s|/\\d+)?",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.tyndalebulletin\\.org/issue/\\d+$",
+    "extraction_pattern": "https://www\\.tyndalebulletin\\.org/article/\\d+",
+    "crawl": true,
+    "site": "Tyndale bulletin : organ of the Tyndale Fellowship for Biblical and Theological Research and of Tyndale House",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/2161007X": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/2161007X(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/2161007x/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/(2161007x|21645183)/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.\\d{4}/((j\\.)?\\d{4}-\\d+\\w?\\.\\d+(?:\\.\\w+\\.x)?|cvj\\.\\d+)",
+    "crawl": true,
+    "site": "Counseling and values : official journal of the National Catholic Guidance Conference",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.pucsp.br": {
+    "pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/article/view/(rct\\.v\\d+i\\d+\\.\\d+|rct\\.i\\d+\\.\\d+|\\d+)$",
+    "crawl": true,
+    "site": "Revista de cultura teológica",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistaseletronicas.pucrs.br/teo": {
+    "pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/archive(/\\d+)?",
+    "volume_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/view/\\d+$",
+    "extraction_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/article/view/\\d+$",
+    "crawl": true,
+    "site": "Teocomunicação : revista trimestral de teologia",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "periodicos.pucminas.br/horizonte": {
+    "pattern": "https://periodicos\\.pucminas\\.br/horizonte/issue/archive",
+    "volume_pattern": "",
+    "crawl_pattern": "https://periodicos\\.pucminas\\.br/horizonte/issue/view/\\d+$",
+    "extraction_pattern": "https://periodicos\\.pucminas\\.br/horizonte/article/view/(P\\.\\d{4}-\\d{4}\\.\\d+\\w+)?\\d+(-\\d+)?$",
+    "crawl": true,
+    "site": "Horizonte : Revista de Estudos de Teologia e Ciências da Religião",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "digitalcommons.unomaha.edu/jrf": {
+    "pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/(all_issues\\.html|vol\\d+/)$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/vol\\d+/iss\\d+/$",
+    "extraction_pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/vol\\d+/iss\\d+/\\d+$",
+    "crawl": true,
+    "site": "The Journal of Religion and Film",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "unipub.uni-graz.at/oerf": {
+    "pattern": "https://unipub\\.uni-graz\\.at/oerf\\?offset=\\d+$",
+    "volume_pattern": "https://unipub\\.uni-graz\\.at/oerf\\?offset=\\d+$",
+    "crawl_pattern": "https://unipub\\.uni-graz\\.at/oerf/periodical/titleinfo/\\d+$",
+    "extraction_pattern": "https://unipub\\.uni-graz\\.at/oerf/content/titleinfo/\\d+$",
+    "crawl": true,
+    "site": "Österreichisches Religionspädagogisches Forum",
+    "selectors": {
+      "linkSelector": "a.scap",
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "dialnet.unirioja.es/servlet": {
+    "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=1218$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
+    "extraction_pattern": "https://dialnet\\.unirioja\\.es/servlet/articulo\\?codigo=\\d+$",
+    "crawl": true,
+    "site": "Revista española de derecho canónico",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.upsa.es": {
+    "pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/issue/archive$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/article/view/\\d+$",
+    "crawl": true,
+    "site": "Revista española de derecho canónico",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "brepolsonline.net/loi/rea": {
+    "pattern": "https://www\\.brepolsonline\\.net/loi/rea",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.brepolsonline\\.net/toc/rea/\\d{4}/\\d+/\\d+$",
+    "extraction_pattern": "https://www\\.brepolsonline\\.net/doi/abs/10\\.\\d{4}/J\\.REA\\.\\d\\.\\d+$",
+    "crawl": true,
+    "site": "Revue des études augustiniennes",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "hts.org.za": {
+    "pattern": "https://hts\\.org\\.za/index\\.php/hts/issue/archive(\\?issuesPage=\\d+)?$",
+    "volume_pattern": "https://hts\\.org\\.za/index\\.php/hts/issue/archive(\\?issuesPage=\\d+)?$",
+    "crawl_pattern": "https://hts\\.org\\.za/index\\.php/hts/issue/view/\\d+$",
+    "extraction_pattern": "https://hts\\.org\\.za/index\\.php/hts/article/view/\\d+$",
+    "crawl": true,
+    "site": "Hervormde teologiese studies",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "revistaeclesiasticabrasileira.itf.edu.br": {
+    "pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/issue/view/\\d+$",
+    "extraction_pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/article/view/\\d+$",
+    "crawl": true,
+    "site": "Revista eclesiástica brasileira : REB",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/14682303": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/14682303(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14682303/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14682303/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|hith\\.\\d+)",
+    "crawl": true,
+    "site": "History and theory : studies in the philosophy of history",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "dialnet.unirioja.es/servlet/revista?codigo=273": {
+    "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=273$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
+    "extraction_pattern": "https://dialnet\\.unirioja\\.es/servlet/articulo\\?codigo=\\d+$",
+    "crawl": true,
+    "site": "Carthaginensia : revista de estudios e investigación",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "tidsskrift.dk": {
+    "pattern": "https://tidsskrift\\.dk/grs/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://tidsskrift\\.dk/grs/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://tidsskrift\\.dk/grs/issue/view/\\d+$",
+    "extraction_pattern": "https://tidsskrift\\.dk/grs/article/view/\\d+$",
+    "crawl": true,
+    "site": "Grundtvig-studier : Grundtvig-Selskabets °arbog",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "raco.cat": {
+    "pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/view/\\d+$",
+    "extraction_pattern": "https://raco\\.cat/index\\.php/Miscellania/article/view/\\d+$",
+    "crawl": true,
+    "site": "Miscellània litúrgica catalana",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "repositorio.uca.edu.ar": {
+    "pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/3317",
+    "volume_pattern": "",
+    "crawl_pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/\\d+$",
+    "extraction_pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/\\d+$",
+    "crawl": true,
+    "site": "Sapientia",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "journals.lub.lu.se": {
+    "pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/view/\\d+$",
+    "extraction_pattern": "https://journals\\.lub\\.lu\\.se/sgl/article/view/\\d+$",
+    "crawl": true,
+    "site": "Svenskt gudstjänstliv : årsbok för liturgi, kyrkokonst, kyrkomusik och homiletik_ Laurentius",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.javeriana.edu.co": {
+    "pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/article/view/\\d+$",
+    "crawl": true,
+    "site": "Theologica Xaveriana : revista de la Facultad de Teología, Pontificia Universidad Javeriana",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "periodicos.est.edu.br": {
+    "pattern": "http://periodicos.est.edu.br/index.php/nepp/issue/archive",
+    "volume_pattern": "",
+    "crawl_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/issue/view/\\d+(/showToc)?$",
+    "extraction_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/article/view/\\d+$",
+    "crawl": true,
+    "site": "Protestantismo em Revista",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "journals.uchicago.edu": {
+    "pattern": "https://www\\.journals\\.uchicago\\.edu/loi/jnes",
+    "volume_pattern": "",
+    "crawl_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/issue/view/\\d+(/showToc)?$",
+    "extraction_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/article/view/\\d+$",
+    "crawl": true,
+    "site": "Journal of Near Eastern studies",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.ucsp.edu.pe": {
+    "pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/article/view/\\d+$",
+    "crawl": true,
+    "site": "Allpanchis : revista anual_ organo del Instituto Pastoral Andina (IPA)",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
   }
 }
