@@ -389,6 +389,20 @@
     },
     "max_links": 5
   },
+    "revistas.upsa.es": {
+    "pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/issue/archive$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/article/view/\\d+$",
+    "crawl": true,
+    "site": "Revista española de derecho canónico",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
   "brepolsonline.net/loi/rea": {
     "pattern": "https://www\\.brepolsonline\\.net/loi/rea",
     "volume_pattern": "",
@@ -396,6 +410,174 @@
     "extraction_pattern": "https://www\\.brepolsonline\\.net/doi/abs/10\\.\\d{4}/J\\.REA\\.\\d\\.\\d+$",
     "crawl": true,
     "site": "Revue des études augustiniennes",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "hts.org.za": {
+    "pattern": "https://hts\\.org\\.za/index\\.php/hts/issue/archive(\\?issuesPage=\\d+)?$",
+    "volume_pattern": "https://hts\\.org\\.za/index\\.php/hts/issue/archive(\\?issuesPage=\\d+)?$",
+    "crawl_pattern": "https://hts\\.org\\.za/index\\.php/hts/issue/view/\\d+$",
+    "extraction_pattern": "https://hts\\.org\\.za/index\\.php/hts/article/view/\\d+$",
+    "crawl": true,
+    "site": "Hervormde teologiese studies",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "revistaeclesiasticabrasileira.itf.edu.br": {
+    "pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/issue/view/\\d+$",
+    "extraction_pattern": "https://revistaeclesiasticabrasileira\\.itf\\.edu\\.br/reb/article/view/\\d+$",
+    "crawl": true,
+    "site": "Revista eclesiástica brasileira : REB",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "onlinelibrary.wiley.com/loi/14682303": {
+    "pattern": "onlinelibrary\\.wiley\\.com/loi/14682303(/year/\\d{4})?",
+    "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14682303/year/\\d{4}$",
+    "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14682303/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
+    "extraction_pattern": "onlinelibrary\\.wiley\\.com/doi/10\\.1111/((j\\.)?\\d{4}-\\d{4}\\.\\d+(?:\\.\\w+\\.x)?|hith\\.\\d+)",
+    "crawl": true,
+    "site": "History and theory : studies in the philosophy of history",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "h2",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "dialnet.unirioja.es/servlet/revista?codigo=273": {
+    "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=273$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
+    "extraction_pattern": "https://dialnet\\.unirioja\\.es/servlet/articulo\\?codigo=\\d+$",
+    "crawl": true,
+    "site": "Carthaginensia : revista de estudios e investigación",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "tidsskrift.dk": {
+    "pattern": "https://tidsskrift\\.dk/grs/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://tidsskrift\\.dk/grs/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://tidsskrift\\.dk/grs/issue/view/\\d+$",
+    "extraction_pattern": "https://tidsskrift\\.dk/grs/article/view/\\d+$",
+    "crawl": true,
+    "site": "Grundtvig-studier : Grundtvig-Selskabets °arbog",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "raco.cat": {
+    "pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/view/\\d+$",
+    "extraction_pattern": "https://raco\\.cat/index\\.php/Miscellania/article/view/\\d+$",
+    "crawl": true,
+    "site": "Miscellània litúrgica catalana",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "repositorio.uca.edu.ar": {
+    "pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/3317",
+    "volume_pattern": "",
+    "crawl_pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/\\d+$",
+    "extraction_pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/\\d+$",
+    "crawl": true,
+    "site": "Sapientia",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "journals.lub.lu.se": {
+    "pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/view/\\d+$",
+    "extraction_pattern": "https://journals\\.lub\\.lu\\.se/sgl/article/view/\\d+$",
+    "crawl": true,
+    "site": "Svenskt gudstjänstliv : årsbok för liturgi, kyrkokonst, kyrkomusik och homiletik_ Laurentius",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.javeriana.edu.co": {
+    "pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/article/view/\\d+$",
+    "crawl": true,
+    "site": "Theologica Xaveriana : revista de la Facultad de Teología, Pontificia Universidad Javeriana",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "periodicos.est.edu.br": {
+    "pattern": "http://periodicos.est.edu.br/index.php/nepp/issue/archive",
+    "volume_pattern": "",
+    "crawl_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/issue/view/\\d+(/showToc)?$",
+    "extraction_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/article/view/\\d+$",
+    "crawl": true,
+    "site": "Protestantismo em Revista",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "journals.uchicago.edu": {
+    "pattern": "https://www\\.journals\\.uchicago\\.edu/loi/jnes",
+    "volume_pattern": "",
+    "crawl_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/issue/view/\\d+(/showToc)?$",
+    "extraction_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/article/view/\\d+$",
+    "crawl": true,
+    "site": "Journal of Near Eastern studies",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+    "revistas.ucsp.edu.pe": {
+    "pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/article/view/\\d+$",
+    "crawl": true,
+    "site": "Allpanchis : revista anual_ organo del Instituto Pastoral Andina (IPA)",
     "selectors": {
       "linkSelector": null,
       "titleSelector": null,

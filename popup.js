@@ -106,7 +106,9 @@ chrome.runtime.onMessage.addListener((message) => {
 // Send selected links to server/cgi
 sendButton.addEventListener('click', async () => {
   if (extractedLinks.length === 0) {
-    alert('No links to send.');
+    const responseBox = document.getElementById('serverResponse');
+    responseBox.textContent = 'No links to send.';
+    responseBox.style.color = 'red';
     return;
   }
 
@@ -127,7 +129,9 @@ sendButton.addEventListener('click', async () => {
   try {
     new URL(url);
   } catch (e) {
-    alert('Invalid URL. Please check the Server/CGI URL field.');
+    const responseBox = document.getElementById('serverResponse');
+    responseBox.textContent = 'Invalid URL. Please check the Server/CGI URL field.';
+    responseBox.style.color = 'red';
     return;
   }
 
@@ -141,10 +145,14 @@ sendButton.addEventListener('click', async () => {
     });
 
     const result = await response.text();
-    alert(`Server response: ${result}`);
+    const responseBox = document.getElementById('serverResponse');
+    responseBox.textContent = `Server response: ${result}`;
+    responseBox.style.color = 'green';
   } catch (err) {
     console.error('Failed to send feed:', err);
-    alert('Failed to send feed. Check console for details.');
+    const responseBox = document.getElementById('serverResponse');
+    responseBox.textContent = 'Failed to send feed. Check console for details.';
+    responseBox.style.color = 'red';
   }
 });
 
@@ -153,7 +161,9 @@ downloadButton.addEventListener('click', () => {
   chrome.runtime.sendMessage({ type: 'REQUEST_LINKS' }, (response) => {
     const links = response.links || [];
     if (links.length === 0) {
-      alert('No links to download.');
+      const responseBox = document.getElementById('serverResponse');
+      responseBox.textContent = 'No links to download.';
+      responseBox.style.color = 'red';
       return;
     }
 
