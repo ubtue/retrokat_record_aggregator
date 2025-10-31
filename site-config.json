@@ -70,7 +70,7 @@
   "foi-et-vie.fr": {
     "pattern": "https://www\\.foi-et-vie\\.fr/archive/?",
     "volume_pattern": "https://www\\.foi-et-vie\\.fr/archive/byyear\\.php#year=(19\\d{2}|[2-9]\\d{3})",
-    "crawl_pattern": "https://www\\.foi-et-vie\\.fr/archive/review.php\\?code=\\d{4}_\\d+$",
+    "crawl_pattern": "https://www\\.foi-et-vie\\.fr/archive/review.php\\?code=\\d{4}_\\d+(-\\d+)?$",
     "extraction_pattern": "https://www\\.foi-et-vie\\.fr/archive/article.php\\?code=\\d+$",
     "crawl": true,
     "site": "Foi & vie : revue de culture protestante",
@@ -95,7 +95,7 @@
     },
     "max_links": 5
   },
-    "koersjournal.org.za": {
+  "koersjournal.org.za": {
     "pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/archive/?",
     "volume_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/archive/\\d+$",
     "crawl_pattern": "www\\.koersjournal\\.org\\.za/index\\.php/koers/issue/view/\\d+$",
@@ -109,7 +109,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/15406385": {
+  "onlinelibrary.wiley.com/loi/15406385": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/15406385(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15406385/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15406385/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -123,7 +123,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/17586631": {
+  "onlinelibrary.wiley.com/loi/17586631": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/17586631(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586631/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586631/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -137,7 +137,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/14679647": {
+  "onlinelibrary.wiley.com/loi/14679647": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/14679647(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679647/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679647/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -151,7 +151,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/17586623": {
+  "onlinelibrary.wiley.com/loi/17586623": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/17586623(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17586623/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/17586623/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -165,7 +165,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/1552146x": {
+  "onlinelibrary.wiley.com/loi/1552146x": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/1552146x/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/1552146x/\\d{4}/\\d+/\\w?(\\d+|\\d+-\\d+)$",
@@ -179,7 +179,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/17576547": {
+  "onlinelibrary.wiley.com/loi/17576547": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/17576547(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/17576547/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/(17576547|18359310)/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -193,7 +193,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/14679205": {
+  "onlinelibrary.wiley.com/loi/14679205": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/14679205(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14679205/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14679205/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -207,7 +207,7 @@
     },
     "max_links": 5
   },
-    "anthrosource.onlinelibrary.wiley.com/loi/15481352": {
+  "anthrosource.onlinelibrary.wiley.com/loi/15481352": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/15481352(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/15481352/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/15481352/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -221,7 +221,7 @@
     },
     "max_links": 5
   },
-    "hispaniasacra.revistas.csic.es": {
+  "hispaniasacra.revistas.csic.es": {
     "pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/(archive|view/\\d+)$",
     "volume_pattern": "",
     "crawl_pattern": "https://hispaniasacra\\.revistas\\.csic\\.es/index\\.php/hispaniasacra/issue/view/\\d+$",
@@ -235,7 +235,7 @@
     },
     "max_links": 5
   },
-    "dialnet.unirioja.es": {
+  "dialnet.unirioja.es": {
     "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=649",
     "volume_pattern": "",
     "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
@@ -249,7 +249,7 @@
     },
     "max_links": 5
   },
-    "revistas.agustinosvalladolid.es": {
+  "revistas.agustinosvalladolid.es": {
     "pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/archive(/\\d+)?",
     "volume_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/archive/\\d+$",
     "crawl_pattern": "https://revistas\\.agustinosvalladolid\\.es/index\\.php/estudio/issue/view/\\d+$",
@@ -263,7 +263,7 @@
     },
     "max_links": 5
   },
-    "revistas.est.edu.br": {
+  "revistas.est.edu.br": {
     "pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/archive(/\\d+)?",
     "volume_pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://revistas\\.est\\.edu\\.br/ET/issue/view/\\d+$",
@@ -277,7 +277,7 @@
     },
     "max_links": 5
   },
-    "tyndalebulletin.org": {
+  "tyndalebulletin.org": {
     "pattern": "https://www\\.tyndalebulletin\\.org/issue(s|/\\d+)?",
     "volume_pattern": "",
     "crawl_pattern": "https://www\\.tyndalebulletin\\.org/issue/\\d+$",
@@ -291,7 +291,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/2161007X": {
+  "onlinelibrary.wiley.com/loi/2161007X": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/2161007X(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/2161007x/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/(2161007x|21645183)/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -305,7 +305,7 @@
     },
     "max_links": 5
   },
-    "revistas.pucsp.br": {
+  "revistas.pucsp.br": {
     "pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/archive(/\\d+)?",
     "volume_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://revistas\\.pucsp\\.br/index\\.php/culturateo/issue/view/\\d+$",
@@ -319,7 +319,7 @@
     },
     "max_links": 5
   },
-    "revistaseletronicas.pucrs.br/teo": {
+  "revistaseletronicas.pucrs.br/teo": {
     "pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/archive(/\\d+)?",
     "volume_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://revistaseletronicas\\.pucrs\\.br/teo/issue/view/\\d+$",
@@ -333,7 +333,7 @@
     },
     "max_links": 5
   },
-    "periodicos.pucminas.br/horizonte": {
+  "periodicos.pucminas.br/horizonte": {
     "pattern": "https://periodicos\\.pucminas\\.br/horizonte/issue/archive",
     "volume_pattern": "",
     "crawl_pattern": "https://periodicos\\.pucminas\\.br/horizonte/issue/view/\\d+$",
@@ -347,7 +347,7 @@
     },
     "max_links": 5
   },
-    "digitalcommons.unomaha.edu/jrf": {
+  "digitalcommons.unomaha.edu/jrf": {
     "pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/(all_issues\\.html|vol\\d+/)$",
     "volume_pattern": "",
     "crawl_pattern": "https://digitalcommons\\.unomaha\\.edu/jrf/vol\\d+/iss\\d+/$",
@@ -361,7 +361,7 @@
     },
     "max_links": 5
   },
-    "unipub.uni-graz.at/oerf": {
+  "unipub.uni-graz.at/oerf": {
     "pattern": "https://unipub\\.uni-graz\\.at/oerf\\?offset=\\d+$",
     "volume_pattern": "https://unipub\\.uni-graz\\.at/oerf\\?offset=\\d+$",
     "crawl_pattern": "https://unipub\\.uni-graz\\.at/oerf/periodical/titleinfo/\\d+$",
@@ -375,7 +375,7 @@
     },
     "max_links": 5
   },
-    "dialnet.unirioja.es/servlet": {
+  "dialnet.unirioja.es/servlet": {
     "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=1218$",
     "volume_pattern": "",
     "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
@@ -389,7 +389,7 @@
     },
     "max_links": 5
   },
-    "revistas.upsa.es": {
+  "revistas.upsa.es": {
     "pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/issue/archive$",
     "volume_pattern": "",
     "crawl_pattern": "https://revistas\\.upsa\\.es/index.php/derechocanonico/issue/view/\\d+$",
@@ -445,7 +445,7 @@
     },
     "max_links": 5
   },
-    "onlinelibrary.wiley.com/loi/14682303": {
+  "onlinelibrary.wiley.com/loi/14682303": {
     "pattern": "onlinelibrary\\.wiley\\.com/loi/14682303(/year/\\d{4})?",
     "volume_pattern": "onlinelibrary\\.wiley\\.com/loi/14682303/year/\\d{4}$",
     "crawl_pattern": "onlinelibrary\\.wiley\\.com/toc/14682303/\\d{4}/\\d+/(\\d+|\\d+-\\d+)$",
@@ -459,10 +459,10 @@
     },
     "max_links": 5
   },
-    "dialnet.unirioja.es/servlet/revista?codigo=273": {
+  "dialnet.unirioja.es/servlet/revista?codigo=273": {
     "pattern": "https://dialnet\\.unirioja\\.es/servlet/revista\\?codigo=273$",
     "volume_pattern": "",
-    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+$",
+    "crawl_pattern": "https://dialnet\\.unirioja\\.es/ejemplar/\\d+(\\?inicio=\\d+)?$",
     "extraction_pattern": "https://dialnet\\.unirioja\\.es/servlet/articulo\\?codigo=\\d+$",
     "crawl": true,
     "site": "Carthaginensia : revista de estudios e investigación",
@@ -473,7 +473,7 @@
     },
     "max_links": 5
   },
-    "tidsskrift.dk": {
+  "tidsskrift.dk": {
     "pattern": "https://tidsskrift\\.dk/grs/issue/archive(/\\d+)?$",
     "volume_pattern": "https://tidsskrift\\.dk/grs/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://tidsskrift\\.dk/grs/issue/view/\\d+$",
@@ -487,7 +487,7 @@
     },
     "max_links": 5
   },
-    "raco.cat": {
+  "raco.cat": {
     "pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/archive(/\\d+)?$",
     "volume_pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://raco\\.cat/index\\.php/Miscellania/issue/view/\\d+$",
@@ -501,7 +501,7 @@
     },
     "max_links": 5
   },
-    "repositorio.uca.edu.ar": {
+  "repositorio.uca.edu.ar": {
     "pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/3317",
     "volume_pattern": "",
     "crawl_pattern": "https://repositorio\\.uca\\.edu\\.ar/handle/123456789/\\d+$",
@@ -515,7 +515,7 @@
     },
     "max_links": 5
   },
-    "journals.lub.lu.se": {
+  "journals.lub.lu.se": {
     "pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/archive(/\\d+)?$",
     "volume_pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://journals\\.lub\\.lu\\.se/sgl/issue/view/\\d+$",
@@ -529,7 +529,7 @@
     },
     "max_links": 5
   },
-    "revistas.javeriana.edu.co": {
+  "revistas.javeriana.edu.co": {
     "pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/archive(/\\d+)?$",
     "volume_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://revistas\\.javeriana\\.edu\\.co/index\\.php/teoxaveriana/issue/view/\\d+$",
@@ -543,11 +543,11 @@
     },
     "max_links": 5
   },
-    "periodicos.est.edu.br": {
-    "pattern": "http://periodicos.est.edu.br/index.php/nepp/issue/archive",
-    "volume_pattern": "",
-    "crawl_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/issue/view/\\d+(/showToc)?$",
-    "extraction_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/article/view/\\d+$",
+  "revistas.est.edu.br/PR": {
+    "pattern": "https://revistas\\.est\\.edu\\.br/PR/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistas\\.est\\.edu\\.br/PR/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.est\\.edu\\.br/PR/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.est\\.edu\\.br/PR/article/view/\\d+$",
     "crawl": true,
     "site": "Protestantismo em Revista",
     "selectors": {
@@ -557,21 +557,7 @@
     },
     "max_links": 5
   },
-    "journals.uchicago.edu": {
-    "pattern": "https://www\\.journals\\.uchicago\\.edu/loi/jnes",
-    "volume_pattern": "",
-    "crawl_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/issue/view/\\d+(/showToc)?$",
-    "extraction_pattern": "http://periodicos\\.est\\.edu\\.br/index\\.php/nepp/article/view/\\d+$",
-    "crawl": true,
-    "site": "Journal of Near Eastern studies",
-    "selectors": {
-      "linkSelector": null,
-      "titleSelector": null,
-      "linkAttr": "href"
-    },
-    "max_links": 5
-  },
-    "revistas.ucsp.edu.pe": {
+  "revistas.ucsp.edu.pe": {
     "pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/archive(/\\d+)?$",
     "volume_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/archive(/\\d+)?$",
     "crawl_pattern": "https://revistas\\.ucsp\\.edu\\.pe/index\\.php/Allpanchis/issue/view/\\d+$",
@@ -581,6 +567,160 @@
     "selectors": {
       "linkSelector": null,
       "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "revistacarthaginensia.com": {
+    "pattern": "https://revistacarthaginensia\\.com/(index\\.php/)?CARTHAGINENSIA/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistacarthaginensia\\.com/(index\\.php/)?CARTHAGINENSIA/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistacarthaginensia\\.com/(index\\.php/)?CARTHAGINENSIA/issue/view/\\d+$",
+    "extraction_pattern": "https://revistacarthaginensia\\.com/(index\\.php/)?CARTHAGINENSIA/article/view/\\d+$",
+    "crawl": true,
+    "site": "Carthaginensia : revista de estudios e investigación",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "journals.uchicago.edu/loi/jnes": {
+    "pattern": "https://www\\.journals\\.uchicago\\.edu/loi/jnes",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.journals\\.uchicago\\.edu/toc/(jnes|amerjsemilanglit|hebraica)/\\d{4}/\\d+/\\d+(%2F\\d+|%2C\\+Part\\+\\d+)?$",
+    "extraction_pattern": "https://www\\.journals\\.uchicago\\.edu/doi/10.\\d{4}/\\d+$",
+    "crawl": true,
+    "site": "Journal of Near Eastern studies",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "degruyterbrill.com/journal/key/zaes": {
+    "pattern": "https://www\\.degruyterbrill\\.com/journal/key/zaes/html#issues",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.degruyterbrill\\.com/journal/key/zaes/\\d+/\\d+(-\\d+)?/html$",
+    "extraction_pattern": "https://www\\.degruyterbrill\\.com/document/doi/10\\.\\d{4}/zaes[.-]\\d{4}[.-]\\d+(\\.jg\\.\\d+|\\.\\d+\\.\\d+)?/html$",
+    "crawl": true,
+    "site": "Zeitschrift für ägyptische Sprache und Altertumskunde",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "span",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "cambridge.org/core/journals/ecclesiastical-law-journal": {
+    "pattern": "https://www\\.cambridge\\.org/core/journals/ecclesiastical-law-journal/all-issues",
+    "volume_pattern": "https://www\\.cambridge\\.org/core/journals/ecclesiastical-law-journal/issue/[\\d|\\w]+$",
+    "crawl_pattern": "https://www\\.cambridge\\.org/core/journals/ecclesiastical-law-journal/issue/[\\d|\\w]+\\?pageNum=\\d+$",
+    "extraction_pattern": "https://www\\.cambridge\\.org/core/journals/ecclesiastical-law-journal/article/",
+    "crawl": true,
+    "site": "Ecclesiastical law journal : the journal of the Ecclesiastical Law Society",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "tidsskrift.dk/hiphilnovum": {
+    "pattern": "https://tidsskrift\\.dk/hiphilnovum/issue/(archive|/view/\\d+)$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://tidsskrift\\.dk/hiphilnovum/issue/view/\\d+$",
+    "extraction_pattern": "https://tidsskrift\\.dk/hiphilnovum/article/view/\\d+$",
+    "crawl": true,
+    "site": "HIPHIL Novum",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "cambridge.org/core/journals/historical-journal": {
+    "pattern": "https://www\\.cambridge\\.org/core/journals/historical-journal/all-issues",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.cambridge\\.org/core/journals/historical-journal/issue/[\\d|\\w]+$",
+    "extraction_pattern": "https://www\\.cambridge\\.org/core/journals/historical-journal/article/",
+    "crawl": true,
+    "site": "The historical journal",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "revistas.usb.edu.co/index.php/Franciscanum": {
+    "pattern": "https://revistas\\.usb\\.edu\\.co/index\\.php/Franciscanum/issue/archive(/\\d+)?$",
+    "volume_pattern": "https://revistas\\.usb\\.edu\\.co/index\\.php/Franciscanum/issue/archive(/\\d+)?$",
+    "crawl_pattern": "https://revistas\\.usb\\.edu\\.co/index\\.php/Franciscanum/issue/view/\\d+$",
+    "extraction_pattern": "https://revistas\\.usb\\.edu\\.co/index\\.php/Franciscanum/article/view/\\d+$",
+    "crawl": true,
+    "site": "Franciscanum : revista de las ciencias del espiritu",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "tandfonline.com/loi/yjpe": {
+    "pattern": "https://www.tandfonline.com/loi/yjpe21$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.tandfonline\\.com/toc/yjpe\\d+/\\d+/\\d+(-\\d+)?(\\?nav=tocList)?$",
+    "extraction_pattern": "https://www\\.tandfonline\\.com/doi/(abs/|full/)?10\\.\\d{4}/(jep\\.)?[-\\d\\.\\w]+$",
+    "crawl": true,
+    "site": "The journal of the European Pentecostal Theological Association",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "journals.ug.edu.gh/index.php/gjrt": {
+    "pattern": "https://journals\\.ug\\.edu\\.gh/index\\.php/gjrt/issue/archive$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://journals\\.ug\\.edu\\.gh/index\\.php/gjrt/issue/view/\\d+$",
+    "extraction_pattern": "https://journals\\.ug\\.edu\\.gh/index\\.php/gjrt/article/view/\\d+$",
+    "crawl": true,
+    "site": "Ghana bulletin of theology",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "ecclesialfutures.org": {
+    "pattern": "https://ecclesialfutures\\.org/issue/archive$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://ecclesialfutures\\.org/issue/view/\\d+$",
+    "extraction_pattern": "https://ecclesialfutures\\.org/article/view/\\d+$",
+    "crawl": true,
+    "site": "Ecclesial Futures",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "degruyterbrill.com/journal/key/zava": {
+    "pattern": "https://www\\.degruyterbrill\\.com/journal/key/zava/html#issues",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.degruyterbrill\\.com/journal/key/zava/\\d+/\\d+(-\\d+)?/html$",
+    "extraction_pattern": "https://www\\.degruyterbrill\\.com/document/doi/10\\.\\d{4}/zava[.-]\\d{4}[.-]\\d+(\\.jg\\.\\d+|\\.\\d+\\.\\d+)?/html$",
+    "crawl": true,
+    "site": "Zeitschrift für Assyriologie und Vorderasiatische Archäologie",
+    "selectors": {
+      "linkSelector": "a.href",
+      "titleSelector": "span",
       "linkAttr": "href"
     },
     "max_links": 5
