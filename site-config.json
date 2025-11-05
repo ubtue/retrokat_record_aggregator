@@ -714,13 +714,41 @@
   "degruyterbrill.com/journal/key/zava": {
     "pattern": "https://www\\.degruyterbrill\\.com/journal/key/zava/html#issues",
     "volume_pattern": "",
-    "crawl_pattern": "https://www\\.degruyterbrill\\.com/journal/key/zava/\\d+/\\d+(-\\d+)?/html$",
-    "extraction_pattern": "https://www\\.degruyterbrill\\.com/document/doi/10\\.\\d{4}/zava[.-]\\d{4}[.-]\\d+(\\.jg\\.\\d+|\\.\\d+\\.\\d+)?/html$",
+    "crawl_pattern": "https://www\\.degruyterbrill\\.com/journal/key/zava/\\d+/(\\d+(-\\d+)?|Jahresband)/html$",
+    "extraction_pattern": "https://www\\.degruyterbrill\\.com/document/doi/10\\.\\d{4}/za(?:va)?[.-]\\d+[.-]\\d+(?:\\.jg\\.\\d+|\\.\\d+(?:-\\d+)?(?:\\.\\d+)?)?/html$",
     "crawl": true,
     "site": "Zeitschrift für Assyriologie und Vorderasiatische Archäologie",
     "selectors": {
       "linkSelector": "a.href",
       "titleSelector": "span",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "jbtc.org": {
+    "pattern": "https://jbtc\\.org/#page=contents$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://jbtc\\.org/v\\d+/index\\.html$",
+    "extraction_pattern": "https://jbtc\\.org/v\\d+/index\\.html$",
+    "crawl": false,
+    "site": "T C : a Journal of Biblical Textual Criticism",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "orthodox-theology.com": {
+    "pattern": "https://www\\.orthodox-theology\\.com/pages/issues(/\\d{4})?\\.php$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.orthodox-theology\\.com/pages/issues/\\d{4}\\.php$",
+    "extraction_pattern": "https://www\\.orthodox-theology\\.com/pages/issues/((\\d{4}/\\d+-\\d+-\\d+)?|\\d+(-\\d+)?)\\.php$",
+    "crawl": true,
+    "site": "International Journal of Orthodox Theology",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
       "linkAttr": "href"
     },
     "max_links": 5
