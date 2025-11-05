@@ -9,7 +9,8 @@ let maxLinks = 5;
 let config = {};
 let stage = 'issue';
 
-function delay(ms) {
+function delay(min, max) {
+  let ms = Math.random() * (max - min) + min;
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -30,7 +31,7 @@ async function crawlNext() {
 
     try {
       await processIssueLink(nextUrl);
-      await delay(1000);
+      await delay(4000, 6000);
     } catch (err) {
       console.error(`[Background] Error processing link ${nextUrl}:`, err);
     }
@@ -135,6 +136,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const issueRegex = new RegExp(config.crawl_pattern);
     const extractionRegex = new RegExp(config.extraction_pattern);
 
+    //const extractionMatches = links.filter(item => extractionRegex.test(item.link) && (!item.title || item.title.trim() === '')); // for Sapientia, only links with empty titles to distinguish between issues and articles
+    const extractionMatches = links.filter(item => extractionRegex.test(item.link));
+    console.log(`[Background] Found ${extractionMatches.length} article links on ${sender.tab ? sender.tab.url : 'unknown page'}`);
+
+
     if (stage === 'volume') {
       links.forEach(item => {
         if (volumeRegex.test(item.link) && !visitedUrls.has(item.link) && !pendingVolumeUrls.has(item.link)) {
@@ -163,7 +169,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       crawlNext();
     }
 
-    const extractionMatches = links.filter(item => extractionRegex.test(item.link));
     extractionMatches.forEach(item => {
       if (!matchedLinks.has(item.link)) {
         matchedLinks.set(item.link, item.title);
