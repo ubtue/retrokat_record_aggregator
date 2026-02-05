@@ -20,18 +20,38 @@
       const allAnchors = Array.from(document.querySelectorAll('a')).filter(a => a.href);
 
       const extractedLinks = allAnchors.map(a => {
-        let isArticle = a.matches(linkSelector);
-        let title;
+        const isArticle = linkSelector ? a.matches(linkSelector) : true;
+
+        let title = '';
+        const selector = titleSelector || null;
+
         if (isArticle) {
-          const titleEl = titleSelector ? a.closest(titleSelector) : null;
-          title = titleEl?.textContent.trim() || a.textContent.trim();
+          let titleEl = null;
+
+          if (selector) {
+            titleEl = a.querySelector(selector);
+          }
+
+          if (!titleEl && selector) {
+            const container = a.closest('td, article, div, li, tr');
+            if (container) {
+              titleEl = container.querySelector(selector);
+            }
+          }
+
+          if (!titleEl && a.previousElementSibling?.matches?.(selector)) {
+            titleEl = a.previousElementSibling;
+          }
+          if (!titleEl && a.nextElementSibling?.matches?.(selector)) {
+            titleEl = a.nextElementSibling;
+          }
+
+          title = titleEl?.textContent?.trim() || a.textContent.trim();
         } else {
           title = a.textContent.trim();
         }
-        return {
-          link: a.href,
-          title
-        };
+
+        return { link: a.href, title };
       });
       console.log('[Content Script] Extracted links:', extractedLinks);
 

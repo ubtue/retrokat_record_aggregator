@@ -715,7 +715,7 @@
     "pattern": "https://www\\.degruyterbrill\\.com/journal/key/zava/html#issues",
     "volume_pattern": "",
     "crawl_pattern": "https://www\\.degruyterbrill\\.com/journal/key/zava/\\d+/(\\d+(-\\d+)?|Jahresband)/html$",
-    "extraction_pattern": "https://www\\.degruyterbrill\\.com/document/doi/10\\.\\d{4}/za(?:va)?[.-]\\d+[.-]\\d+(?:\\.jg\\.\\d+|\\.\\d+(?:-\\d+)?(?:\\.\\d+)?)?/html$",
+    "extraction_pattern": "https://www\\.degruyterbrill\\.com/document/doi/10\\.\\d{4}/(ZA|za)(?:va)?[.-]\\d+[.-]\\d+(?:\\.jg\\.\\d+|\\.\\d+(?:-\\d+)?(?:\\.\\d+)?)?/html$",
     "crawl": true,
     "site": "Zeitschrift für Assyriologie und Vorderasiatische Archäologie",
     "selectors": {
@@ -749,6 +749,62 @@
     "selectors": {
       "linkSelector": null,
       "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "svst.edu.ph/hapag/": {
+    "pattern": "https://www\\.svst\\.edu\\.ph/hapag/volumes$",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.svst\\.edu\\.ph/hapag/issues/[\\w\\d-]+$",
+    "extraction_pattern": "https://www\\.svst\\.edu\\.ph/hapag/issues/article/[\\w\\d-]+$",
+    "crawl": true,
+    "site": "Hapág : a journal of interdisciplinary theological research",
+    "selectors": {
+      "linkSelector": "a[href]",
+      "titleSelector": "div.title",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "ub.edu/ipoa/en/aula-orientalis": {
+    "pattern": "https://www\\.ub\\.edu/ipoa/en/aula-orientalis",
+    "volume_pattern": "",
+    "crawl_pattern": "^https://www\\.ub\\.edu/ipoa/aula-orientalis[-/](?:au-or|\\d+)-\\d{4}-(?:\\d+|vol)(?:-\\d+(?:-\\d+)?)?/$",
+    "extraction_pattern": "^https://www\\.ub\\.edu/ipoa/aula-orientalis[-/](?:au-or|\\d+)-\\d{4}-(?:\\d+|vol)(?:-\\d+(?:-\\d+)?)?/$",
+    "crawl": false,
+    "site": "Aula orientalis : revista de estudios del Próximo Oriente Antiguo",
+    "selectors": {
+      "linkSelector": null,
+      "titleSelector": null,
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "cchahistory.ca": {
+    "pattern": "https://cchahistory.ca/cdnjournalofcatholichistory/back-issues-archive/",
+    "volume_pattern": "",
+    "crawl_pattern": ".*\/CCHA(198[4-9]|199[0-9]|200[0-6])(?:-\\d+)?\/[^\/]*\\d[^\/]*\\.html?$",
+    "extraction_pattern": "https?:\/\/(?:www[.])?cchahistory\\.ca\/journal\/CCHA\\s*\\d{4}(?:[-\\d]+)?\/['\\w\\s(%20)-]+\\.pdf$",
+    "crawl": true,
+    "site": "Historical studies / the Canadian Catholic Historical Association",
+    "selectors": {
+      "linkSelector": "span:has(a[href$='.pdf']) a[href$='.pdf']",
+      "titleSelector": "span",
+      "linkAttr": "href"
+    },
+    "max_links": 5
+  },
+  "pdcnet.org": {
+    "pattern": "https://www.pdcnet\\.org/collection-anonymous/browse\\?fp=philtheol",
+    "volume_pattern": "",
+    "crawl_pattern": "https://www\\.pdcnet\\.org/collection-anonymous/browse\\?start=\\d+&fq=philtheol.*",
+    "extraction_pattern": "https://www\\.pdcnet\\.org/philtheol/content/philtheol[\\d{4}_]+$",
+    "crawl": true,
+    "site": "Philosophy & theology : Marquette University journal",
+    "selectors": {
+      "linkSelector": ".purchase[href*='/philtheol/content/']",
+      "titleSelector": "span.title label",
       "linkAttr": "href"
     },
     "max_links": 5
